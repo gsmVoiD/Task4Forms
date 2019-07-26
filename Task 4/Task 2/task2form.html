@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="This is Task 4, the HTML Form with Bootstrap.">
+  <meta name="author" content="Raghav Pant">
+  <title>Task 4 Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="quadysterlogo.png" width="150px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src = "home.png">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src = "users.png"> Users</a>
+      </li>
+      <li class = "nav-item">
+        <a class ="nav-link" href = "#"><img src = "portals.png"> Portals </a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src = "partners.png"> Partners
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">1</a>
+          <a class="dropdown-item" href="#">2</a>
+          <a class="dropdown-item" href="#">3</a>
+      </li>
+      <li class = "nav-item dropdown">
+        <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdown" rule = "button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <img src = "Fulfillments.png"> Fulfillments
+        </a>
+      <div class = "dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class = "dropdown-item" href = "#">1</a>
+        <a class="dropdown-item" href = "#"> 2 </a>
+        <li class="nav-item">
+        <a class="nav-link" href="#"><img src = "opportunities.png">Opportunities </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src = "newoppo.png">New Opportunity </a>
+      </li>
+    </div>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+        <img src="person.png">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  <div class="form-horizontal" action="/action_page.php">
+    <div class="row mb-1">
+      <div class="col-2 text-right text-muted text-nowrap" for="ContID">Contract ID:</div>
+      <div class="col-9 text-right text-info">
+        <input type="text" class="form-control" id="ContID" value="CON0003" readonly>
+    </div>
+</div>
+<div class="row mb-1">
+  <div class="col-2 text-right text-muted text-nowrap" for="Cont#">Contract Number:</div>
+  <div class="col-9 text-left text-info">
+    <input type="text" class="form-control" id="Cont#" value="PR-R9-17-00207">
+</div>
+</div>
+<div class="row mb-1">
+  <div class="col-2 text-right text-muted text-nowrap" for="Name">Name:</div>
+  <div class="col-9 text-left text-info">
+    <input type="text" class="form-control" id="Name" value="Arcserve">
+</div>
+</div>
+<div class="row mb-1">
+  <div class="col-2 text-right text-muted text-nowrap" for="Description">Description:</div>
+  <div class="col-9 text-left text-info">
+    <textarea class="form-control" rows="4" id="comment" placeholder="Description"></textarea>
+</div>
+</div>
+<div class="row mb-1">
+  <div class="col-2 text-right text-muted" for="CustCode">Customer Code:</div>
+  <div class="col-7 text-left text-info">
+    <select class="custom-select" id="CustomerCode">
+      <option value = "CUSDO3" selected>CUSDO3 - US Environmental Protection Agency</option>
+  </select>
+</div>
+ &nbsp; &nbsp; &nbsp; &#8239;  &nbsp; &nbsp; &nbsp; &nbsp;
+<div class ="col-1 text-right-text-muted text-nowrap"> &nbsp; &nbsp; &nbsp; &#8239; 
+    <a class="btn btn-outline-success" href="#">View Customer</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+<div class="form-horizontal">
+<div class = "form-group">
+   <div class="row mb-1">
+    <div class="col-2 text-right text-muted text-nowrap" for="ContID">Contract Date:</div>
+      <div class="col-3 text-left text-info input-group">
+        <input type="date" class="form-control" id="ContDate" value="2017-07-10">
+    </div>
+      <div class="col-2 text-right text-muted text-nowrap" for="SolNum">Solicitation Number:</div>
+      <div class="col-4 text-left text-info input-group">
+        <input type="text" class="form-control" id="Name" value="RFQ-CA-17-00014">
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-horizontal">
+<div class = "form-group">
+   <div class="row">
+    <div class="col-2 text-right text-muted text-nowrap" for="PerfFrom">Perf Period From:</div>
+      <div class="col-3 text-left text-info input-group">
+        <input type="date" class="form-control" id="PerfFrom" value="2017-07-13">
+    </div>
+      <div class="col-2 text-right text-muted text-nowrap" for="PerfTo">Perf Period To:</div>
+      <div class="col-4 text-left text-info input-group">
+        <input type="date" class="form-control" id="PerfTo" value="2017-07-12">
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-horizontal">
+<div class = "form-group">
+   <div class="row">
+    <div class="col-2 text-right text-muted text-nowrap" for="PerfYear">Performance Year:</div>
+      <div class="col-3 text-left text-info input-group">
+<select class="form-control" id = "PerfYear">
+          <option placeholder = "First"> First Year </option>
+          <option placeholder =  "Second"> Second Year </option>
+          <option placeholder = "Third">Third Year</option>
+      </select>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-horizontal">
+<div class = "form-group">
+   <div class="row">
+    <div class="col-2 text-right text-muted text-nowrap" for="DelivDate">Delivery Date:</div>
+      <div class="col-3 text-left text-info input-group">
+        <input type="date" class="form-control" id="DelivDate" value="2017-07-17">
+    </div>
+      <div class="col-2 text-right text-muted text-nowrap" for="DelivMode">Delivery Mode:</div>
+      <div class="col-4 text-left text-info input-group">
+        <select class = "form-control" id ="DelivMode">
+            <option placeholder = "Email"> Email </option>
+            <option placeholder = "Phone"> Phone </option>
+        </select>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-horizontal">
+<div class = "form-group">
+   <div class="row">
+    <div class="col-2 text-right text-muted text-nowrap" for="DelivStatus">Delivery Status:</div>
+      <div class="col-3 text-left text-info input-group">
+<select class="form-control" id = "DelivStatus">
+          <option placeholder = "Delivered"> Delivered </option>
+          <option placeholder =  "Not Delivered"> Not Delivered </option>
+      </select>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-horizontal">
+<div class = "form-group">
+   <div class="row">
+    <div class="col-2 text-right text-muted text-nowrap" for="PayTerms">Payment Terms:</div>
+      <div class="col-3 text-left text-info input-group">
+               <select class = "form-control" id ="Payment Terms">
+            <option placeholder = "Net30"> Net 30 </option>
+        </select>
+    </div>
+      <div class="col-2 text-right text-muted text-nowrap" for="PayMode">Payment Mode</div>
+      <div class="col-4 text-left text-info input-group">
+        <select class = "form-control" id ="PayMode">
+            <option placeholder = "ACH"> ACH </option>
+        </select>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-horizontal">
+<div class = "form-group">
+   <div class="row mb-1">
+    <div class="col-2 text-right text-muted text-nowrap" for="PayTerms">Payment Due Date:</div>
+      <div class="col-3 text-left text-info input-group">
+        <input type="text" class="form-control" id="ContDate" placeholder="Payment Due Date">
+    </div>
+      <div class="col-2 text-right text-muted text-nowrap" for="ContNum">Contract Number:</div>
+      <div class="col-4 text-left text-info input-group">
+        <input type="text" class="form-control" id="ContNum" value="4121.73">
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-horizontal">
+<div class = "form-group">
+   <div class="row mb-1">
+    <div class="col-2 text-right text-muted text-nowrap" for="FeeTerms">Fee Terms:</div>
+      <div class="col-3 text-left text-info input-group">
+       <select class = "form-control" id ="FeeTerms">
+            <option placeholder = "blank">  </option>
+        </select>
+    </div>
+      <div class="col-2 text-right text-muted text-nowrap" for="SolNum">Fee Amount:</div>
+      <div class="col-4 text-left text-info input-group">
+        <input type="text" class="form-control" id="FeeAmount" value="0.00">
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-horizontal">
+<div class = "form-group">
+   <div class="row mb-1">
+    <div class="col-2 text-right text-muted text-nowrap" for="FeeDue">Fee Due Date:</div>
+      <div class="col-3 text-left text-info input-group">
+        <input type="text" class="form-control" id="PayDue" placeholder="Fee Due Date" >
+    </div>
+      <div class="col-2 text-right text-muted text-nowrap" for="FeePaid">Fee Paid Date:</div>
+      <div class="col-4 text-left text-info input-group">
+        <input type="text" class="form-control" id="FeePaid" value="Fee Paid Date">
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-horizontal">
+<div class = "form-group">
+   <div class="row mb-1">
+    <div class="col-2 text-right text-muted text-nowrap" for="ContNetAmount">Contract Net Amount:</div>
+      <div class="col-3 text-left text-info input-group">
+        <input type="text" class="form-control" id="ContNetAmount" value="4121.73">
+    </div>
+      <div class="col-2 text-right text-muted text-nowrap" for="PaidDate">Paid Date:</div>
+      <div class="col-4 text-left text-info input-group">
+        <input type="date" class="form-control" id="PaidDate" value="2017-07-28">
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-horizontal">
+<div class="form-group">
+    <div class="row mb-1">
+      <div class="col-2 text-right text-muted text-nowrap" for="PayStatus">Payment Status:</div>
+      <div class="col-9 text-right text-info">    
+        <select class = "form-control" id = "PayStatus">
+        <option placeholder = "Recieved"> Recieved </option>
+    </select> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+<center>
+<button type="button" class="btn btn-primary">Save</button>
+<button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-bin"></span>Delete</button>
+<button type="button" class="btn btn-default">Switch to View</button>
+<button type="button" class="btn btn-default">Goto: Contract List</button>
+</center>
+</body>
+</html>
